@@ -7,8 +7,9 @@ This template is meant to get you up-and-running with a full-stack web applicati
 * ESlint package configured for Airbnb styleguide
 
 ### **How to use this template**
-* Click "use template" next to the clone button, this will create a new repository on *your* github account.
-* Clone the repository down to your machine.
+* click "use template" next to the clone button, this will create a new repository on *your* github account
+* clone the repository down to your machine
+* run the `schema.sql` query in the mySQL tool of your choice  
 * run &nbsp; `npm install`
 * run &nbsp; `touch .env` &nbsp;in the root of your repository
 * open the .env file
