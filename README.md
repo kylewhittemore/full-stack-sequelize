@@ -12,12 +12,11 @@ This template is meant to get you up-and-running with a full-stack web applicati
 * run &nbsp; `npm install`
 * run &nbsp; `touch .env` &nbsp;in the root of your repository
 * open the .env file
-
-![image](./public/assets/images/dotenv.png)
-
 * add the four environmental variables that will be used to connect to the database:
     <br/>       `DB_PASSWORD=yourpassword`
     <br/>       `DB_HOST=127.0.0.1`
     <br/>       `DB_USER=root`
     <br/>       `DB_NAME=sample_db`
 * run &nbsp; `npm start` to start the server with nodemon which will automatically refresh after any server-side code changes
+
+![image](./public/assets/images/dotenv.png)
