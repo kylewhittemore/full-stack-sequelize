@@ -1,12 +1,12 @@
 # **full-stack-sequelize Template**
-This template is meant to get you up-and-running with a full-stack web application scaffolded out and ready to run using node, express, and sequelize.
+this template is meant to get you up-and-running with a full-stack web application scaffolded out and ready to run using node, express, and sequelize.  happy coding.
 
-### **Additional features**
+### **useful features**
 * 'dotenv' environmental variables package configured for sequelize
 * nodemon package configured
 * ESlint package configured for Airbnb styleguide
 
-### **How to use this template**
+### **how to use this template**
 * click "use template" next to the clone button, this will create a new repository on *your* github account
 * clone the repository down to your machine
 * run the `schema.sql` query in the mySQL tool of your choice  
