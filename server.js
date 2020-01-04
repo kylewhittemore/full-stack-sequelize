@@ -1,26 +1,19 @@
 const express = require('express');
+const db = require('./models');
+const routes = require('./routes');
 
 const app = express();
 
-// require('dotenv').config();
-
 const PORT = process.env.PORT || 8080;
 
-const db = require('./models');
-
-// Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-// Static directory
-app.use(express.static("public"));
-
-const routes = require('./routes');
+app.use(express.static('public'));
 
 app.use('/', routes);
 
-// Syncing our sequelize models and then starting our Express app
-// =============================================================
+// Sync sequelize models then start Express app
+// =============================================
 db.sequelize.sync().then(() => {
   app.listen(PORT, () => {
     console.log(`App listening on PORT ${PORT}`);
