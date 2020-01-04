@@ -21,3 +21,8 @@ this template is meant to get you up-and-running with a full-stack web applicati
 * run &nbsp; `npm start` to start the server with nodemon which will automatically refresh after any server-side code changes
 
 ![image](./public/assets/images/dotenv.png)
+
+### **links and resources**
+* [eslint Getting started page](https://eslint.org/docs/user-guide/getting-started)
+* [dotenv NPM Documentation](https://www.npmjs.com/package/dotenv)
+* [airbnb styleguide documentation](https://github.com/airbnb/javascript)
