@@ -19,6 +19,8 @@ this template is meant to get you up-and-running with a full-stack web applicati
     <br/>       `DB_USER=root`
     <br/>       `DB_NAME=sample_db`
 * run &nbsp; `npm start` to start the server with nodemon which will automatically refresh after any server-side code changes
+* check out the optional migrations guide below!
+* check out the heroku deployment guide below!
 
 ![image](./public/assets/images/dotenv.png)
 
@@ -29,7 +31,7 @@ this template is meant to get you up-and-running with a full-stack web applicati
 * to fully take advantage of this feature, it makes sense to use the cli tools to create the basic shell of your models, as this will also create a migration file at the same time.
 * to create a model run `npx sequelize-cli model:generate
 
-### **Instructions for Implementing Migrations**
+### **Optional Instructions for Implementing Migrations**
 * run &nbsp; 
 
         npx sequelize-cli model:generate --name <ModelName> --attributes,<someAttribute>:string,<anotherAttribute>:boolean
@@ -57,16 +59,7 @@ this template is meant to get you up-and-running with a full-stack web applicati
         npx sequelize-cli db:seed:all
 
 * you are now all set to push everything up to github and continue with the steps below to deploy to heroku.
-* the final step will be to seed your production database as well.  To seed your procuction database, add the following line to the scripts in the &nbsp; `package.json` &nbsp; file, right below the start script:
-
-        "heroku-postbuild": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
-
-* save and commit your changes to github, then run another
-
-        git push heroku master
-
-    to push the changes to heroku and run a fresh build.  The script that was added will run the migration and seed at the end of the heroku build.
-* `select * ...` &nbsp; within your database management tool to see your freshly seeded production database!  Note that the database will be re-seeded each time you run a build, and the build ***does not*** drop the table automatically.  So to avoid doubling your data set, drop the table prior to running another build (you can use your management tool for this).  If you do not wish to continue re-seeding your production database, as you surely will at some point, just remove the `"heroku-postbuild"` script from the `package.json` file.
+* the final step will be to seed your production database as well.  See the optional last step in the heroku deployment section.
 
 ### **Heroku Deployment**
 * you nay need to log into the heroku cli, do so by running &nbsp; `heroku login` &nbsp; in the terminal, you will also need the heroku website so might as well log in there too
@@ -100,6 +93,17 @@ this template is meant to get you up-and-running with a full-stack web applicati
 ![image](./public/assets/images/db-name.png)
 
 * now you can manage your deployed production database!
+* ***Optional last steps when using migrations:***
+* To seed your production database, add the following line to the scripts in the &nbsp; `package.json` &nbsp; file, right below the start script:
+
+        "heroku-postbuild": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
+
+* save and commit your changes to github, then run another
+
+        git push heroku master
+
+    to push the changes to heroku and run a fresh build.  The script that was added will run the migration and seed at the end of the heroku build.
+* `select * ...` &nbsp; within your database management tool to see your freshly seeded production database!  Note that the database will be re-seeded each time you run a build, and the build ***does not*** drop the table automatically.  So to avoid doubling your data set, drop the table prior to running another build (you can use your management tool for this).  If you do not wish to continue re-seeding your production database, as you surely will at some point, just remove the `"heroku-postbuild"` script from the `package.json` file.
 
 ### **Notes About This Database Configuration**
 * you now have two databases, a local development database and a deployed production database
