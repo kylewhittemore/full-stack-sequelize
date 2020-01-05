@@ -28,7 +28,6 @@ this template is meant to get you up-and-running with a full-stack web applicati
 * Sequelize-cli allows you to create models and seed your database from the command line
 * This will allow you to pre-fill your database for development, as well as provide a consistent data set for testing accross multiple collaborators
 * Please refer to the instructions below and [Sequelize migrations documentation](https://sequelize.org/master/manual/migrations.html#bootstrapping) to configure this project for migrations
-* to create a model run `npx sequelize-cli model:generate
 
 ### **Optional Instructions for Implementing Migrations**
 * run &nbsp; 
