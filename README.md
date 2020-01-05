@@ -1,4 +1,4 @@
-# **full-stack-sequelize Template**
+# **full-stack-sequelize template**
 this template is meant to get you up-and-running with a full-stack web application scaffolded out and ready to run using node, express, and sequelize.  happy coding.
 
 ### **useful features**
