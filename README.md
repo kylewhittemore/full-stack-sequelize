@@ -32,7 +32,15 @@ this template is meant to get you up-and-running with a full-stack web applicati
 * to create a model run `npx sequelize-cli model:generate
 
 ### **Optional Instructions for Implementing Migrations**
-* run &nbsp; 
+* run two sequelize-cli commands to initialize the migrations and seeders folders
+
+        npx sequelize-cli init:migrations
+
+  and 
+
+        npx sequelize-cli init:seeders
+
+* run 
 
         npx sequelize-cli model:generate --name <ModelName> --attributes,<someAttribute>:string,<anotherAttribute>:boolean
 
