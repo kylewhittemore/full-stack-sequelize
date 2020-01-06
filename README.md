@@ -54,7 +54,7 @@ this template is meant to get you up-and-running with a full-stack web applicati
 
 * Next we will create a seed file that will allow us to populate the table with a dataset on command, allowing us to share a consistent dataset accross collaborators, as well as revert the table back to a clean state after testing.
 
-        npx sequelize-cli seed:generate
+        npx sequelize-cli seed:generate <SEED NAME HERE, EX. DEMO-USER>
 
 * Open the seed file created in the seeders folder and set up your seed data. for example:
 
