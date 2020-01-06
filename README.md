@@ -27,6 +27,7 @@ this template is meant to get you up-and-running with a full-stack web applicati
 ![image](./public/assets/images/dotenv.png)
 
 ### **Optional Database Migrations and Seeding**
+* ***If you dont want to set up migrations at the moment, you can always come back to it, just skip ahead to the "Heroku Deployment" section***
 * Sequelize-cli allows you to create models and seed your database from the command line
 * This will allow you to pre-fill your database for development, as well as provide a consistent data set for testing accross multiple collaborators
 * Please refer to the instructions below and [Sequelize migrations documentation](https://sequelize.org/master/manual/migrations.html#bootstrapping) to configure this project for migrations
@@ -117,6 +118,11 @@ this template is meant to get you up-and-running with a full-stack web applicati
 * you now have two databases, a local development database and a deployed production database
 * when running your application locally as you develop, it will connect to the local development database using the credentials you supplied in your .env file
 * the heroku-deployed application will connect automatically to the deployed production database
+* if at any point you with to revert to a clean data set, run the migration/seeder instructions above.  Heroku has a cli that can be accessed by running
+
+        heroku run bash <name of application>
+  this will allow you to run the migration and seed commands on the production database manually by running the `npx sequelize-cli...` commands detailed above.
+* remember that the heroku postbuild script in the package.json file is optional and may or may not be worth keeping in for you if you use the heroku cli tool.  It will append the seedfile dataset to the database each time the application is pushed to heroku.  You can also drop the table using your management tool prior to running another heroku build.
 
 ### **To Disable ESLint**
 * delete the .eslintrc.js file
