@@ -5,6 +5,9 @@ this template is meant to get you up-and-running with a full-stack web applicati
 * 'dotenv' environmental variables package configured for sequelize
 * nodemon package configured
 * ESlint package configured for Airbnb styleguide
+* heroku-deployment ready
+* instructions to create separate development and production databases
+* instructions for migrating and seeding databases
 
 ### **How to Use This Template**
 * click "use template" next to the clone button, this will create a new repository on *your* github account
@@ -19,8 +22,7 @@ this template is meant to get you up-and-running with a full-stack web applicati
     <br/>       `DB_USER=root`
     <br/>       `DB_NAME=sample_db`
 * run &nbsp; `npm start` to start the server with nodemon which will automatically refresh after any server-side code changes
-* check out the optional migrations guide below!
-* check out the heroku deployment guide below!
+* ***check out the optional migrations and heroku deployment guides below!***
 
 ![image](./public/assets/images/dotenv.png)
 
@@ -40,7 +42,7 @@ this template is meant to get you up-and-running with a full-stack web applicati
 
 * run 
 
-        npx sequelize-cli model:generate --name <ModelName> --attributes,<someAttribute>:string,<anotherAttribute>:boolean
+        npx sequelize-cli model:generate --name <ModelName> --attributes <someAttribute>:string,<anotherAttribute>:boolean
 
     entering in the model name and the attribute you are initializing it with - for example: 
 
