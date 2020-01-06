@@ -72,7 +72,7 @@ this template is meant to get you up-and-running with a full-stack web applicati
 
 ### **Heroku Deployment**
 * you nay need to log into the heroku cli, do so by running &nbsp; `heroku login` &nbsp; in the terminal, you will also need the heroku website so might as well log in there too
-* run &nbsp;`heroku create`
+* run &nbsp;`heroku create` in the root of your project repository.
 * select your application on the heroku website
 * click "Configure Add-ons"
 * type "JawsDB" into the search bar, select "JawsDB MySQL" and provision the "Kitefin Shared - Free" default option
