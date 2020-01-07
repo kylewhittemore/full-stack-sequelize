@@ -52,7 +52,7 @@ this template is meant to get you up-and-running with a full-stack web applicati
 * this will create the model in the models folder, and a migration file in the migrations folder.
 * you will need to go to the model file and finish setting it up, add validation, etc.
 * you will also need to set up your migrations file to match your model before running the migration
-* Once you have set up your model, you can run the migration to create the table in your database:
+* Once you have set up your model and matching migration, you can run the migration to create the table in your database:
             
         npx sequelize-cli db:migrate
 
@@ -72,7 +72,7 @@ this template is meant to get you up-and-running with a full-stack web applicati
 * the final step will be to seed your production database as well.  See the optional last step in the heroku deployment section.
 
 ### **Heroku Deployment**
-* you nay need to log into the heroku cli, do so by running &nbsp; `heroku login` &nbsp; in the terminal, you will also need the heroku website so might as well log in there too
+* you may need to log into the heroku cli, do so by running &nbsp; `heroku login` &nbsp; in the terminal, you will also need the heroku website so might as well log in there too
 * run &nbsp;`heroku create` in the root of your project repository.
 * select your application on the heroku website
 * click "Configure Add-ons"
