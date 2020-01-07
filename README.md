@@ -27,6 +27,7 @@ this template is meant to get you up-and-running with a full-stack web applicati
 ![image](./public/assets/images/dotenv.png)
 
 ### **Optional Database Migrations and Seeding**
+#### ***Hey, this part can be confusing and is waaay beyond the scope of this readme to fully explain...if you choose to implement this useful functionality, you will need to refer to the documentation!***
 * ***If you dont want to set up migrations at the moment, you can always come back to it, just skip ahead to the "Heroku Deployment" section***
 * Sequelize-cli allows you to create models and seed your database from the command line
 * This will allow you to pre-fill your database for development, as well as provide a consistent data set for testing accross multiple collaborators
