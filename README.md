@@ -51,6 +51,7 @@ this template is meant to get you up-and-running with a full-stack web applicati
 
 * this will create the model in the models folder, and a migration file in the migrations folder.
 * you will need to go to the model file and finish setting it up, add validation, etc.
+* you will also need to set up your migrations file to match your model before running the migration
 * Once you have set up your model, you can run the migration to create the table in your database:
             
         npx sequelize-cli db:migrate
