@@ -75,6 +75,7 @@ this template is meant to get you up-and-running with a full-stack web applicati
 ### **Heroku Deployment**
 * you may need to log into the heroku cli, do so by running &nbsp; `heroku login` &nbsp; in the terminal, you will also need the heroku website so might as well log in there too
 * run &nbsp;`heroku create` in the root of your project repository.
+* you can now run `git push heroku master` to push your application to heroku in its current state.  You will need to do this each time you wish to rebuild your heroku deployment.  You can also set up your repository to automatically push to heroku when you push to github -look around, you will find it!
 * select your application on the heroku website
 * click "Configure Add-ons"
 * type "JawsDB" into the search bar, select "JawsDB MySQL" and provision the "Kitefin Shared - Free" default option
